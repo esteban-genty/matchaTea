@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+}
+
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contact {
+  min-height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(183,203,145);
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid lightgray;
+}
+p {
+  width: 250px;
+  text-align: justify;
+  padding: 20px;
+  line-height: 40px;
+  font-size: 1.5rem;
+}
+.contact-container {
+  text-align: center;
+  border-left: 2px solid lightgray;
+}
+.field {
+  display: block;
+  margin-bottom: 30px;
+}
+label {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 5px;
+}
+#civility {
+  width: 250px;
+  border: none;
+  padding: 10px 40px;
+  background: none;
+  border: 1px solid whitesmoke;
+  outline: none;
+}
+input[type="text"],
+input[type="email"] {
+  height: 30px;
+}
+
+input[type="text"],
+input[type="email"],textarea {
+  border: none;
+  outline: none;
+  width: 250px;
+  padding: 0 10px;
+  
+  
+}
+
+textarea {
+  padding: 10px;
+  height: 100px;
+  resize: none;
+  background-color: whitesmoke;
+}
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 10px 40px;
+  background: none;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
