@@ -1,0 +1,41 @@
+root {
+    .lobster-regular {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    --bg-color: #4e792a;
+    --main-text-color: #d4efbc;
+
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #4e792a;
+    ul {
+        width: 80%;
+        display: flex;
+        gap: 10px;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #d4efbc;
+            }
+            a:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
