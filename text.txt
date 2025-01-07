@@ -1,0 +1,39 @@
+<h3>Get In Touch</h3>
+    <section class="contact">
+      <div class="contact-info">
+        <div>
+          <p>
+            if you want to see more of my work,<br />
+            collaborate, or even chat, leave me a note ! <br />
+            i'd love to hear from you.
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-container">
+        <div class="field">
+          <label for="civility">Civilité*</label>
+          <select id="civility" name="civility">
+            <option value="monsieur">Mr</option>
+            <option value="madame">Mme</option>
+            <option value="mademoiselle">Non Spécifié</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="name">enter your name*</label>
+          <input class="input_1" type="text" placeholder="Name" />
+        </div>
+        <div class="field">
+          <label for="email">enter your email*</label>
+          <input class="input_2" type="email" placeholder="Email" />
+        </div>
+        <div>
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" rows="5" required>Message</textarea>
+        </div>
+        <input class="btn" type="submit" value="send message" />
+      </form>
+    </section>
+
+
+
