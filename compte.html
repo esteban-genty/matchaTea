@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de vente de thé">
+    <meta name="keywords" content="Matcha, Thé, Tea, Matcha Tea">
+    <meta name="author" content="Estéban, Antoine, Lamine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Tea</title>
+    <!-- Style de feuille -->
+    <link rel="stylesheet" href="matcha.css">
+    <link rel="stylesheet" href="matcha1.css">
+    <link rel="stylesheet" href="matcha2.css">
+    <link rel="stylesheet" href="matcha3.css">
+
+    <!-- Police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- En-tête de page -->
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="index.html"><h5>Matcha Tea</h5></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="compte.html"><img src="img/utilisateur.png" alt="Mon Compte"></a></li>
+                <li><a href="moncompte.html">Mon Compte</a></li>
+            </ul>
+            <div class="menu-hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contenue">
+            <!-- Le sommaire dans aside -->
+            <aside class="section-gauche">
+                <ul>
+                    <li><a href="#">A Propos</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="vente.html">Vente</a></li>
+                </ul>
+            </aside>
+            
+        <!-- Nouvelle section à droite -->
+        <section class="section-droite">
+
+        <section class="compte">
+            <h1>Mon Compte</h1>
+            <button class="btn-compte">Utilisateur</button>
+            <button class="btn-compte">Administrateur</button>
+        </section>
+
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <label for="Navigation">Navigation</label>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#histoire">Histoire</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="vente.html">Vente</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <article>
+            <label for="">Thanks for stopping by !</label>
+            <a href="#contact.html">Let's keep in touch</a>
+        </article>
+        <div>
+            <label for="Coordonnées">Coordonnées</label>
+            <p>8 rue d'hozier<br>13002<br>Marseille</p>
+        </div>
+        <label id="lp" for="">La Plateforme_ 2025</label>
+    </footer>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".section-gauche")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+
+</html>

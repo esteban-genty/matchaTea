@@ -1,8 +1,11 @@
+/*Enleve tous les padding / margin de base */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Haute de page*/
 .nav-bar{
     background-color: #4e792a;
     padding: 15px;
@@ -16,12 +19,17 @@
     width: 100%;
     z-index: 1000;
 }
+.nav-bar li{
+    list-style: none;
+}
 
+/*Section à droite du header*/
 .nav-right{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .nav-right a{
     text-decoration: none;
     color: #d4efbc;
@@ -37,9 +45,7 @@
     transition: 0.3s ease;
 }
 
-.nav-bar li{
-    list-style: none;
-}
+/*Section à gauche du header*/
 .nav-left h5{
     font-family: "Lobster", serif;
     font-weight: 400;
@@ -50,9 +56,110 @@
 .nav-left a{
     text-decoration: none;
 }
+
+/*Hover*/
 .nav-right img:hover{
     transform: scale(1.1);
 }
 .nav-bar a:hover{
     color: white;
+}
+
+
+root {
+    .lobster-regular {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    --bg-color: #4e792a;
+    --main-text-color: #d4efbc;
+
+}
+
+
+/* Bas de page */
+footer {
+    bottom: 0;
+    width: 85%;
+    float: right;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4e792a;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    nav {
+        padding-top: 40px;
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 0;
+            li {
+                list-style: none;
+                padding: 10px 0;
+                a {
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #d4efbc;
+                }
+                a:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 60%;
+        height: 80%;
+        margin-top: 35px;
+        background: url("img/accueil/article-footer1.png") center/cover;
+        color: white;
+        font-size: 30px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 14%;
+            padding: 5px;
+            color: white;
+            border: white solid 1px;
+            background-color: transparent;
+            transition: 0.4s ease;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+            height: 45px;
+            width: 15%;
+        }
+    }
+    div {
+        padding: 40px 0 60px 0;
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p {
+            margin-top: 30px;
+            line-height: 20px; 
+        }
+    }
+    #lp {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 5px;
+    }
 }
