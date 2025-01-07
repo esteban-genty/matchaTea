@@ -31,6 +31,7 @@
                 <li><a href="compte.html"><img src="img/utilisateur.png" alt="Mon Compte"></a></li>
                 <li><a href="moncompte.html">Mon Compte</a></li>
             </ul>
+            <div class="menu-hamburger">&#9776;</div>
         </nav>
     </header>
 
@@ -125,5 +126,17 @@
             </section>
         </section>
     </main>
+    <footer></footer>
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".section-gauche")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+
 </html>
