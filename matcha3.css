@@ -50,14 +50,40 @@ button{
     transition: 0.3s ease;
 }
 
-aside{
-    background-color:  #629a35;
+.left-section{
+    background-color:  #4e792a;
     width: 15%;
     height: 100vh;
     position: fixed;
+}
+
+.left-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+    margin-top: 200px;
+}
+.left-section li{
+    list-style: none;
+}
+.left-section a{
+    text-decoration: none;
+    color: #d4efbc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transition: 0.3s ease;
 }
 .right-section{
     float: right;
     width: 80%;
 }
-
+button:hover{
+    background-color: #3c601f;
+}
+.left-section a:hover{
+    color: white;
+}
