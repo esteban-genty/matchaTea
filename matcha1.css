@@ -6,10 +6,10 @@ body {
 }
 
 main {
-    height: 65vh;
-    img {
+    height: 90vh;
+    div {
+        background: url("img/accueil/main-bg1.jpg") bottom/cover;
         height: 100%;
         width: 100%;
-        object-fit: cover;
     }
 }
