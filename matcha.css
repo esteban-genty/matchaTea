@@ -1,3 +1,17 @@
+:root {
+    .lobster-regular {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    --main-font: Arial, Helvetica, sans-serif;
+
+    --bg-color: #4e792a;
+    --secondary-color: #d4efbc;
+
+}
+
 /*Enleve tous les padding / margin de base */
 *{
     margin: 0;
@@ -80,6 +94,7 @@
     text-align: center;
     margin-top: 70px;
     gap: 1%;
+    position: static;
 }
 .section-gauche li{
     list-style: none;
@@ -102,19 +117,21 @@
     padding-right: 50%;
 }
 
-
-root {
-    .lobster-regular {
-        font-family: "Lobster", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    --bg-color: #4e792a;
-    --main-text-color: #d4efbc;
-
+.section-droite{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width: 85%;
 }
+
+
 @media screen and (max-width: 768px) {
+    .section-droite{
+        width: 100%;
+
+    }
     .section-gauche {
         padding: 20px;
         width: 100%;
@@ -148,38 +165,66 @@ root {
     background-color: transparent;
     padding-right: 0;
     }
-    
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        article {
+            width: 100%;
+            height: 200px;
+            a {
+                width: fit-content;
+            }
+            a:active {
+                background-color: white;
+                color: black;
+            }
+        }
+        div {
+            padding-bottom: 40px;
+        }
+    } 
 }
 
 /* Bas de page */
 footer {
     bottom: 0;
     width: 85%;
-    float: right;
     height: 350px;
     display: flex;
+    float: right;
     justify-content: space-evenly;
-    background-color: #4e792a;
+    background-color: var(--bg-color);
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
+    color: white;
+    letter-spacing: 1px;
     nav {
         padding-top: 40px;
         label {
             font-size: 18px;
             font-weight: bold;
+            color: var(--secondary-color);
         }
         ul {
+            margin-top: 30px;
             padding-left: 0;
             li {
+                margin: 15px 0;
                 list-style: none;
-                padding: 10px 0;
                 a {
                     text-decoration: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #d4efbc;
+                    font-family: var(--main-font);
+                    color: white;
+                }
+                #a-top2 {
+                    margin-top: 30px;
                 }
                 a:hover {
-                    color: #ffffff;
+                    color: var(--secondary-color);
                 }
             }
         }
@@ -201,7 +246,7 @@ footer {
             justify-content: center;
             align-items: center;
             height: 40px;
-            width: 14%;
+            width: 20%;
             padding: 5px;
             color: white;
             border: white solid 1px;
@@ -212,15 +257,16 @@ footer {
         }
         a:hover {
             background-color: whitesmoke;
-            color: black;
+            color: rgb(0, 0, 0);
             cursor: pointer;
             height: 45px;
-            width: 15%;
+            width: 22%;
         }
     }
     div {
         padding: 40px 0 60px 0;
         label {
+            color: var(--secondary-color);
             font-size: 18px;
             font-weight: bold;
         }
@@ -228,10 +274,5 @@ footer {
             margin-top: 30px;
             line-height: 20px; 
         }
-    }
-    #lp {
-        position: fixed;
-        bottom: 0;
-        margin-bottom: 5px;
     }
 }
