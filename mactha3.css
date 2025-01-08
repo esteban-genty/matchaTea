@@ -1,6 +1,17 @@
-body {
-  min-height: 1000px;
+:root {
+  .lobster-regular {
+      font-family: "Lobster", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  --main-font: Arial, Helvetica, sans-serif;
+
+  --bg-color: #4e792a;
+  --secondary-color: #d4efbc;
+
 }
+
 
 h3 {
   color: lightgreen;
@@ -30,7 +41,7 @@ h3 {
 .contact-info > div {
   width: 60%;
 }
-p {
+.contact-info p {
   line-height: 40px;
   font-size: 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,6 +146,93 @@ img {
 .rating-text {
   color: #555;
   margin-left: 8px;
+}
+/* *****************Footer********************* */
+footer {
+  bottom: 0;
+  width: 85%;
+  height: 350px;
+  display: flex;
+  float: right;
+  justify-content: space-evenly;
+  background-color: var(--bg-color);
+  text-align: center;
+  font-family: var(--main-font);
+  color: white;
+  letter-spacing: 1px;
+  nav {
+      padding-top: 40px;
+      label {
+          font-size: 18px;
+          font-weight: bold;
+          color: var(--secondary-color);
+      }
+      ul {
+          margin-top: 30px;
+          padding-left: 0;
+          li {
+              margin: 15px 0;
+              list-style: none;
+              a {
+                  text-decoration: none;
+                  font-family: var(--main-font);
+                  color: white;
+              }
+              #a-top2 {
+                  margin-top: 30px;
+              }
+              a:hover {
+                  color: var(--secondary-color);
+              }
+          }
+      }
+  }
+  article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 60%;
+      height: 80%;
+      margin-top: 35px;
+      background: url("images/article-footer.jpg") center/cover;
+      color: white;
+      font-size: 30px;
+      a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 20%;
+          padding: 5px;
+          color: white;
+          border: white solid 1px;
+          background-color: transparent;
+          transition: 0.4s ease;
+          font-size: 18px;
+          text-decoration: none;
+      }
+      a:hover {
+          background-color: whitesmoke;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          height: 45px;
+          width: 22%;
+      }
+  }
+  div {
+      padding: 40px 0 60px 0;
+      label {
+          color: var(--secondary-color);
+          font-size: 18px;
+          font-weight: bold;
+      }
+      p {
+          margin-top: 30px;
+          line-height: 20px; 
+      }
+  }
 }
 /* ****************Media Queries************** */
 @media (max-width: 780px) {
