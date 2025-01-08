@@ -23,12 +23,12 @@ h1{
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    height: 500px;
+    height: 50%;
     border-radius: 20px;
-    gap: 30px;
+    gap: 15px;
 }
 .produit img{
-    width: 300px;
+    width: 80%;
     height: auto;
 }
 .produit figure{
@@ -51,6 +51,7 @@ button{
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -69,9 +70,6 @@ button:hover{
 }
 .section-gauche a:hover{
     color: white;
-}
-.menu-hamburger{
-    display: none;
 }
 
 /* Compte */
@@ -98,8 +96,23 @@ button:hover{
 .btn-compte{
     width: 50%;
 }
+/* Etoile */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.rating i {
+    color: #ddff00;
+    margin: 0 2px;
+}
 
 @media (max-width: 768px){
+    h1{
+        margin-top: 200px;
+    }
     .produits{
         flex-direction: column;
         align-items: center;
