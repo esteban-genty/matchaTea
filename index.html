@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"> <!-- Encodage Du Document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Affichage Mobile -->
-    <meta name="description" content="Site de vente de thé"> <!-- Description de la page -->
-    <meta name="keywords" content="Matcha, Thé, Tea, Matcha Tea"> <!-- Mots Clés (Moteur de Recherche) -->
-    <meta name="author" content="Estéban, Antoine, Lamine"> <!-- Auteur -->
-    <title>Matcha Tea</title> <!-- Titre Du Site -->
-    <link rel="stylesheet" href="matcha.css"><!--Matcha CSS ( Header / Footer )-->
-    <link rel="stylesheet" href="matcha1.css"><!--CSS d'Antoine-->
-    <link rel="stylesheet" href="matcha2.css"><!--CSS d'Estéban-->
-    <link rel="stylesheet" href="matcha3.css"><!--Css de Lamine-->
+    <meta charset="UTF-8"> <!-- Document's encoder -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile display -->
+    <meta name="description" content="Site de vente de thé"> <!-- Description of the page -->
+    <meta name="keywords" content="Matcha, Thé, Tea, Matcha Tea"> <!-- Keywords (For Google etc...) -->
+    <meta name="author" content="Estéban, Antoine, Lamine"> <!-- Author -->
+    <title>Matcha Tea</title> <!-- Website Title -->
+    <link rel="stylesheet" href="matcha.css"><!-- Matcha CSS ( Header / Footer )-->
+    <link rel="stylesheet" href="matcha1.css"><!-- Antoine Homepage CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
+      <!-- Header -->
+      <header>
+        <nav class="nav-bar">
+            <ul class="nav-left">
+                <li><a href="index.html"><h5>Matcha Tea</h5></a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="compte.html"><img src="img/utilisateur.png" alt="Mon Compte"></a></li>
+                <li><a href="moncompte.html">Mon Compte</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div></div>
+        <section class="content">
+            <!-- Left Section, sidebar sommair -->
+            <aside class="section-left">
+                <ul>
+                    <li><a href="#" id="a-top">A Propos</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">Vente</a></li>
+                </ul>
+            </aside>
+            
+        <!-- Right Section of the main, content of the page -->
+        <section class="section-right">
+            <div>
+                <label for="" class="product-info"></label>
+                <label for="" class="quantity"></label>
+                <label for="" class="price"></label>
+                <label for="" class="actions"></label>
+            </div>
+            <div class="product-line">
+                <div>
+                    <img src="" alt="">
+                    <label for="" class="product-line-name"></label>
+                </div>
+                <div>
+                    <label for="" class="product-line-quantity"></label>
+                </div>
+                
+            </div>
+
+
+        </section>
     </main>
     <footer>
         <nav>
             <label for="Navigation">Navigation</label>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" id="a-top2">Accueil</a></li>
                 <li><a href="#histoire">Histoire</a></li>
                 <li><a href="#a-propos">À Propos</a></li>
                 <li><a href="vente.html">Vente</a></li>
@@ -37,8 +77,8 @@
         <div>
             <label for="Coordonnées">Coordonnées</label>
             <p>8 rue d'hozier<br>13002<br>Marseille</p>
+            <p id="lp">© La Plateforme_<br>2025</p>
         </div>
-        <label id="lp" for="">La Plateforme_ 2025</label>
     </footer>
 </body>
 </html>
