@@ -31,7 +31,6 @@
                 <li><a href="compte.html"><img src="img/utilisateur.png" alt="Mon Compte"></a></li>
                 <li><a href="moncompte.html">Mon Compte</a></li>
             </ul>
-            <div class="menu-hamburger">&#9776;</div>
         </nav>
     </header>
 
@@ -41,9 +40,10 @@
             <!-- Le sommaire dans aside -->
             <aside class="section-gauche">
                 <ul>
-                    <li><a href="#">A Propos</a></li>
-                    <li><a href="#">Histoire</a></li>
-                    <li><a href="#">Vente</a></li>
+                    <li><a href="vente.html" class="nav-link">Vente</a></li>
+                    <li><a href="#" class="nav-link">Histoire</a></li>
+                    <li><a href="#" class="nav-link">A Propos</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </aside>
             
@@ -149,15 +149,5 @@
         <label id="lp" for="">La Plateforme_ 2025</label>
     </footer>
 </body>
-
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".section-gauche")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
-
 
 </html>

@@ -41,9 +41,10 @@
             <!-- Le sommaire dans aside -->
             <aside class="section-gauche">
                 <ul>
-                    <li><a href="#">A Propos</a></li>
-                    <li><a href="#">Histoire</a></li>
-                    <li><a href="vente.html">Vente</a></li>
+                    <li><a href="vente.html" class="nav-link">Vente</a></li>
+                    <li><a href="#" class="nav-link">Histoire</a></li>
+                    <li><a href="#" class="nav-link">A Propos</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </aside>
             
@@ -82,14 +83,6 @@
     </footer>
 </body>
 
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".section-gauche")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
 
 
 </html>
