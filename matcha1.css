@@ -10,51 +10,68 @@ body {
 /* Homepage content */
     
 .section-right {
-    .header-links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 60px;
-        width: 85%;
-        float: right;
-        /* margin: 0 auto; */
-        /* position: absolute; */
-        /* top: 150px; */
-        /* left: 150px; */
-        /* right: 0px; */
-      }
-      .nav-link {
-        cursor: pointer;
-        transition: .3s ease;
-      }
-      .nav-link:hover {
-        transform: scale(1.1);
-      }
-      .nav-link p {
-        text-align: center;
-        margin-top: 5px;
-      }
-      
-      .img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 100px;
-      }
     .bg-img {
         background: url("img/accueil/main-bg1.jpg") bottom/cover;
         height: 100vh;
         width: 85%;
         float: right;
+        .header-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 90px;
+            margin-bottom: 20px;
+            .nav-link {
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: .3s ease;
+                background-color: rgba(255, 255, 255, 0.459);
+                border-radius: 25px;
+            }
+            .nav-link:hover {
+                transform: scale(1.1);
+                background-color: white;
+            }
+            .nav-link p {
+                text-align: center;
+                margin-top: 5px;
+            }
+            .img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 100px;
+              }
+          }
     }
 }
 
 /* Homepage Content responsive to mobile*/
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .section-right {
-        div {
+        .bg-img {
             width: 100%;
+            .header-links {
+                width: 85%;
+                float: right;
+                display: flex;
+                flex-wrap: wrap;
+                .nav-link {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .section-right {
+        .bg-img {
+            width: 100%;
+            .header-links {
+                margin-top: 140px;
+                width: 100%;
+            }
         }
     }
 }
