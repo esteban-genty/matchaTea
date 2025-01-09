@@ -11,6 +11,7 @@ body {
     
 .section-right {
     font-family: var(--main-font);
+    letter-spacing: 1px;
     .bg-img {
         background: url("img/accueil/main-bg1.jpg") bottom/cover;
         height: 100vh;
