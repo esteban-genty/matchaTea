@@ -14,39 +14,70 @@ body {
                 margin-top: 100px;
                 margin-bottom: 50px;
                 table {
-                    width: 90%;
+                    width: 95%;
                     border-collapse: collapse;
-                    border: 2px solid rgb(140 140 140);
                     caption {
                         text-align: left;
                         font-family: "Lobster", serif;
                         font-size: 3em;
-                        margin: -10px;
+                        margin: 0 0 -10px 50px;
                     }
                     thead {
                         width: 100%;
-                        border-bottom: rgb(140 140 140) solid 1px;
                         th {
                             text-align: left;
                             padding: 20px;
-                            border-left: rgb(140 140 140) solid 1px;
-                            border-right: rgb(140 140 140) solid 1px;
                             background-color: var(--third-color);
+                            i {
+                                cursor: pointer;
+                            }
+                        }
+                        .namecase {
+                            border-top-left-radius: 25px;
+                        }
+                        .actioncase {
+                            border-top-right-radius: 25px;
                         }
                     }
                     tbody {
                         tr {
-                            border-bottom: rgb(140 140 140) solid 1px;
+                            border-bottom: rgba(140, 140, 140, 0.25) solid 1px ;
                             td {
                                 padding: 3px;
-                                border-left: rgb(140 140 140) solid 1px;
-                                border-right: rgb(140 140 140) solid 1px;
+                                border-left: rgba(140, 140, 140, 0.267) solid 1px;
+                                border-right: rgba(140, 140, 140, 0.267) solid 1px;
                                 text-align: center;
                                 i {
                                     cursor: pointer;
                                     margin: 0 5px;
                                 }
+                                i:hover {
+                                    color: var(--third-color);
+                                }
                             }
+                            .firstcol {
+                                box-shadow: var(--third-color) inset 5px 0 0;
+                            }
+                            .lastcol {
+                                border-right: none;
+                                box-shadow: var(--third-color) inset -5px 0 0;
+                            }
+                        }
+                        lastrow {
+                            border-bottom: none;
+                            
+                        }
+                    }
+                    tfoot {
+                        td {
+                            background-color: var(--third-color);
+                            height: 30px;
+                        }
+                        .firstcol {
+                            border-bottom-left-radius: 25px;
+                        }
+                        .lastcol {
+                            border-bottom-right-radius: 25px;
                         }
                     }
                     

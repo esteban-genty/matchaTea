@@ -55,6 +55,8 @@
 }
 
 .nav-bar i{
+    width: 30px;
+    height: 30px;
     font-size: 1.3rem;
     cursor: pointer;
 }
