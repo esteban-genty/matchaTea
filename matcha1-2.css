@@ -1,0 +1,59 @@
+/* Admin page CSS */
+
+body {
+    height: 100vh;
+    font-family: var(--main-font);
+    main {
+        .section-right {
+            height: 100vh;
+            .customer-panel {
+                display: flex;
+                justify-content: center;
+                float: right;
+                width: 85%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+                table {
+                    width: 90%;
+                    border-collapse: collapse;
+                    border: 2px solid rgb(140 140 140);
+                    caption {
+                        text-align: left;
+                        font-family: "Lobster", serif;
+                        font-size: 3em;
+                        margin: -10px;
+                    }
+                    thead {
+                        width: 100%;
+                        border-bottom: rgb(140 140 140) solid 1px;
+                        th {
+                            text-align: left;
+                            padding: 20px;
+                            border-left: rgb(140 140 140) solid 1px;
+                            border-right: rgb(140 140 140) solid 1px;
+                            background-color: var(--third-color);
+                        }
+                    }
+                    tbody {
+                        tr {
+                            border-bottom: rgb(140 140 140) solid 1px;
+                            td {
+                                padding: 3px;
+                                border-left: rgb(140 140 140) solid 1px;
+                                border-right: rgb(140 140 140) solid 1px;
+                                text-align: center;
+                                i {
+                                    cursor: pointer;
+                                    margin: 0 5px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
