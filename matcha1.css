@@ -10,6 +10,7 @@ body {
 /* Homepage content */
     
 .section-right {
+    font-family: var(--main-font);
     .bg-img {
         background: url("img/accueil/main-bg1.jpg") bottom/cover;
         height: 100vh;
