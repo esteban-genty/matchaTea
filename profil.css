@@ -11,27 +11,16 @@
   --secondary-color: #d4efbc;
 
 }
+body 
 
 
-
-
-h3 {
-  color: lightgreen;
-  text-align: center;
-  text-transform: capitalize;
-  font-family: "lobster",sans-serif;
-  font-size: bold;
-  margin-top: 20px;
-  padding: 20px;
-}
-
+/* *******************Contact************** */
 .contact {
   min-height: 50vh;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  
   
 }
 .contact-info {
@@ -49,42 +38,33 @@ h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-container {
+  margin-top: 40px;
+  width: 80%;
+  float: right;
   text-align: center;
-  border-left: 2px solid gray;
 }
 .field {
+  padding: 10px 0;
   display: block;
   margin-bottom: 30px;
 }
 label {
+  color: gray;
   text-transform: capitalize;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: block;
-  margin-bottom: 5px;
-}
-#civility {
-  width: 50%;
-  border: none;
-  padding: 10px 5px;
-  background: none;
-  border: 1px solid lightgreen;
-  outline: none;
-}
-input[type="text"],
-input[type="email"] {
-  height: 30px;
+  margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="email"],textarea {
+
+span {
   border: none;
   outline: none;
-  width: 50%;
+  width: 40%;
   padding: 0 10px;
-  border-bottom: 1px solid rgb(144, 238, 144);
+  font-size: 1.2rem;
 }
-input[type="text"]:hover,
-input[type="email"]:hover {
+span:hover {
   background-color: rgb(195, 247, 195);
 }
 
@@ -107,48 +87,9 @@ textarea {
 .btn:hover {
   background-color: lightgreen;
 }
-/* **********************Ventes******************** */
 
-img {
-  width: 200px;
-}
-.product-image-conatiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.product-container {
-  width: 300px;
-}
-.product-rating {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-}
-.stars {
-  color: #f5b301;
-  margin: 0 8px;
-}
-.stars::before {
-  content: "★★★★★";
-  letter-spacing: 3px;
-}
-.grey-stars::before {
-  content: "★★★★★";
-  color: #ddd;
-  position: absolute;
-  letter-spacing: 3px;
-}
-.full-stars {
-  position: absolute;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-}
-.rating-text {
-  color: #555;
-  margin-left: 8px;
-}
+
+
 /* *****************Footer********************* */
 footer {
   bottom: 0;
@@ -247,3 +188,104 @@ footer {
     display: block;
   }
 }
+
+/* *******************MatchaCSS************************ */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+/*Haute de page*/
+.nav-bar{
+  background-color: #4e792a;
+  padding: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-bar li{
+  list-style: none;
+}
+
+/*Section à droite du header*/
+.nav-right{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-right a{
+  text-decoration: none;
+  color: #d4efbc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: 0.3s ease;
+}
+.nav-right img{
+  width: 25px;
+  margin-bottom: -3px;
+  height: auto;
+  transition: 0.3s ease;
+}
+
+/*Section à gauche du header*/
+.nav-left h5{
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  color: #d4efbc;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.nav-left a{
+  text-decoration: none;
+}
+
+/*Hover*/
+.nav-right img:hover{
+  transform: scale(1.1);
+}
+.nav-bar a:hover{
+  color: white;
+}
+.section-gauche{
+  background-color:  #4e792a;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  padding-bottom: 50px;
+}
+
+.section-gauche ul{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: center;
+  margin-top: 140px;
+}
+.section-gauche li{
+  list-style: none;
+}
+.section-gauche a{
+  text-decoration: none;
+  color: #d4efbc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+
