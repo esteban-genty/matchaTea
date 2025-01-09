@@ -159,6 +159,53 @@ button:hover{
     transition: 0.3s ease;
 }
 
+.commandes{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.commandes table{
+    width: 90%;
+}
+.commandes th{
+    font-size: 2rem;
+    text-align: left;
+    font-family: var(--main-font);
+    padding: 40px;
+    color: #3a1d06;
+    background-color: var(--third-color);
+}
+.commandes thead{
+    background-color: var(--secondary-color);
+}
+.commandes td{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+}
+.commandes table{
+    border: 2px solid #3a1d0688;
+}
+.commandes a{
+    text-decoration: none;
+    color: #061e3a;
+}
+.btn-commandes{
+    background-color: var(--secondary-color);
+    color: white;
+    color: #3a1d06;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-commandes:hover{
+    background-color: #3a1d06;
+    color: white;
+}
 
 
 
@@ -211,4 +258,28 @@ button:hover{
         font-size: 1.2rem;
     }
 
+
+    .commandes table {
+        width: 100%;
+        border: none;
+    }
+
+    .commandes th, .section-droite .commandes td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .commandes thead {
+        display: none;
+    }
+
+    .commandes tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 2px solid #3a1d06;
+    }
+    .btn-commandes {
+        width: 100%;
+        text-align: center;
+    }
 }
