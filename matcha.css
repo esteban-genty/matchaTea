@@ -10,14 +10,14 @@ header {
 
 /*Haute de page*/
 .nav-bar{
-  background-color: #4e792a;
+  background-color: #d6d582;
   padding: 15px;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #3a1d06;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -52,7 +52,7 @@ header {
 .nav-left h5{
   font-family: "Lobster", serif;
   font-weight: 400;
-  color: #d4efbc;
+  color: #3a1d06;
   font-size: 2rem;
   margin-left: 20px;
 }
@@ -65,7 +65,7 @@ header {
   transform: scale(1.1);
 }
 .nav-bar a:hover{
-  color: white;
+  color: #3a1d06;
 }
 .section-gauche{
   background-color:  #4e792a;
