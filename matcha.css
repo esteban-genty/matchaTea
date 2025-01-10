@@ -13,12 +13,24 @@
 
 }
 
-/* Delete all padding / margin */
-*{
+/* Reset CSS global */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding: 0;
+}
+
 
 /*Header*/
 .nav-bar{
@@ -131,7 +143,7 @@
     flex-direction: column;
     align-items: center;
     float: right;
-    width: 83%;
+    width: 85%;
 }
 
 

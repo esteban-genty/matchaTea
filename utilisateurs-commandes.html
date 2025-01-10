@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
 </head>
 <body>
     <!-- Header -->
@@ -32,27 +33,51 @@
         </nav>
     </header>
 
-    <main>
-        <section class="content">
-            <!-- Left Section, sidebar sommair -->
-            <aside class="section-left">
-                <ul>
-                    <li><a href="vente.html" class="nav-link">Vente</a></li>
-                    <li><a href="histoire.html" class="nav-link">Histoire</a></li>
-                    <li><a href="ap-propos.html" class="nav-link">A Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </aside>
-            
-        <!-- Section Right -->
+<main>
+    <section class="content">
+        <!-- Summary -->
+        <aside class="section-left">
+            <ul>
+                <li><a href="utilisateurs-commandes.html" class="nav-link">Commandes</a></li>
+                <li><a href="profil.html" class="nav-link">Profil</a></li>
+            </ul>
+        </aside>
+    </section>
+        
+        <!-- Right section -->
         <section class="section-right">
-
-        <section class="account">
-            <h1>Mon Compte</h1>
-            <a href="profil.html"><button class="btn-account">Utilisateur</button></a>
-            <a href="admin-produit.html"><button class="btn-account">Administrateur</button></a>
-        </section>
-
+            <section class="admin-order">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Commandes</th>
+                            <th>Date</th>
+                            <th>Statuts</th>
+                            <th>Facturation</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">Cyril Zimmermann</a></td>
+                            <td>48min</td>
+                            <td>En cours</td>
+                            <td>45 Avenue des Champs, Marseille</td>
+                            <td>50€</td>
+                            <td><button class="btn-order">Voir plus</button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cyril Zimmermann</a></td>
+                            <td>6j</td>
+                            <td>Validée</td>
+                            <td>45 Avenue des Champs, Marseille</td>
+                            <td>75€</td>
+                            <td><button class="btn-order">Voir plus</button></td>
+                        </tr>                      
+                    </tbody>
+                </table>
+            </section>
         </section>
     </main>
     <footer>
@@ -69,7 +94,7 @@
         </nav>
         <!-- center section footer : article -->
         <article>
-            <label for="">Une question ?</label>
+            <label for="">Une Question ?</label>
             <a href="#contact.html">Contactez-nous</a>
         </article>
         <!-- Right section footer : infos -->

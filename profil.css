@@ -38,6 +38,7 @@ h4 {
   padding-top: 60px;
   width: 80%;
   float: inline-end;
+  margin-top: 100px;
 }
 .espace-perso {
   display: grid;
@@ -49,6 +50,7 @@ h4 {
   width: 80%;
   background-color: rgba(237, 234, 234, 0.929);
   padding: 20px;
+  margin: 10px;
 }
 .espace-perso i {
   display: flex;
@@ -67,8 +69,9 @@ h4 {
   background-color: #4e792a92;
 }
 .contact-container {
+  flex-direction: column;
   margin-top: 40px;
-  width: 80%;
+  width: 100%;
   float: right;
   text-align: center;
 }
@@ -78,7 +81,6 @@ h4 {
   margin-bottom: 30px;
 }
 label {
-  color: gray;
   text-transform: capitalize;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: block;
