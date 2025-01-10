@@ -188,15 +188,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.section-right{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    float: right;
-    width: 85%;
-}
-
 @media (max-width: 768px) {
     .hero-content {
         max-width: 100%;

@@ -23,6 +23,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--main-font);
 }
 
 /* Header */
@@ -104,6 +105,7 @@ header {
     width: 15%;
     height: 100%;
     position: fixed;
+    z-index: 999;
 }
 
 .section-left ul{
