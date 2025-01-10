@@ -1,7 +1,6 @@
 /* Homepage CSS */
 
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -17,12 +16,14 @@ body {
         height: 100vh;
         width: 85%;
         float: right;
+        /* Benefits cards board */
         .header-links {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-top: 90px;
             margin-bottom: 20px;
+            /* Benefit card */
             .nav-link {
                 padding: 10px 20px;
                 cursor: pointer;
@@ -48,7 +49,7 @@ body {
     }
 }
 
-/* Homepage Content responsive to mobile*/
+/* Homepage Content responsive to mobile & tablet*/
 @media (max-width: 900px) {
     .section-right {
         .bg-img {
