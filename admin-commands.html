@@ -7,13 +7,13 @@
     <meta name="author" content="Estéban, Antoine, Lamine">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha Tea</title>
-    <!-- Style de feuille -->
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="matcha.css">
     <link rel="stylesheet" href="matcha1.css">
     <link rel="stylesheet" href="matcha2.css">
     <link rel="stylesheet" href="matcha3.css">
 
-    <!-- Police d'écriture -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -22,34 +22,33 @@
 
 </head>
 <body>
-    <!-- En-tête de page -->
+    <!-- Header -->
     <header>
-        <nav class="nav-bar">
-            <ul class="nav-left">
-                <li><a href="index.html"><h5>Matcha Tea</h5></a></li>
-            </ul>
-            <ul class="nav-right">
-                <li><a href="compte.html"><i class="fa-regular fa-user"></i></i></a></li>
-                <li><a href="moncompte.html">Mon Compte</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav-bar">
+        <ul class="nav-left">
+            <li><a href="index.html"><h5>Matcha Tea</h5></a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="compte.html"><i class="fa-regular fa-user"></i></i></a></li>
+            <li><a href="moncompte.html">Mon Compte</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-
-        <section class="contenue">
-            <!-- Le sommaire dans aside -->
-            <aside class="section-gauche">
-                <ul>
-                    <li><a href="admin-produit.html" class="nav-link">Liste des<br>produits</a></li>
-                    <li><a href="admin-commands.html" class="nav-link">Liste des<br>commandes</a></li>
-                    <li><a href="#" class="nav-link">Liste des<br>utilisateurs</a></li>
-                </ul>
-            </aside>
-            
-        <!-- Nouvelle section à droite -->
-        <section class="section-droite">
-            <section class="commandes">
+<main>
+    <section class="content">
+        <!-- Summary -->
+        <aside class="section-left">
+            <ul>
+                <li><a href="admin-produit.html" class="nav-link">Liste des<br>produits</a></li>
+                <li><a href="admin-commands.html" class="nav-link">Liste des<br>commandes</a></li>
+                <li><a href="#" class="nav-link">Liste des<br>utilisateurs</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Right section -->
+        <section class="section-right">
+            <section class="admin-order">
                 <table>
                     <thead>
                         <tr>
@@ -68,7 +67,7 @@
                             <td>En cours</td>
                             <td>123 Rue Exemple, Paris</td>
                             <td>50€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Marc Dupont</a></td>
@@ -76,7 +75,7 @@
                             <td>Validée</td>
                             <td>45 Avenue des Champs, Lyon</td>
                             <td>75€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Lucie Martin</a></td>
@@ -84,7 +83,7 @@
                             <td>Refusée</td>
                             <td>9 Rue des Lilas, Marseille</td>
                             <td>120€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Hugo Lemoine</a></td>
@@ -92,7 +91,7 @@
                             <td>En cours</td>
                             <td>22 Boulevard Victor Hugo, Bordeaux</td>
                             <td>30€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Claire Bernard</a></td>
@@ -100,7 +99,7 @@
                             <td>Validée</td>
                             <td>67 Rue de la République, Toulouse</td>
                             <td>55€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Pierre Leclerc</a></td>
@@ -108,7 +107,7 @@
                             <td>Refusée</td>
                             <td>11 Place de la Gare, Lille</td>
                             <td>80€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Sarah Dubois</a></td>
@@ -116,7 +115,7 @@
                             <td>En cours</td>
                             <td>5 Rue de l'Artisan, Nantes</td>
                             <td>90€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Julien Leroy</a></td>
@@ -124,7 +123,7 @@
                             <td>Validée</td>
                             <td>3 Rue des Fleurs, Nice</td>
                             <td>120€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Nina Lefevre</a></td>
@@ -132,7 +131,7 @@
                             <td>Refusée</td>
                             <td>24 Rue des Roses, Strasbourg</td>
                             <td>65€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>
                         <tr>
                             <td><a href="">Maxime Moreau</a></td>
@@ -140,7 +139,7 @@
                             <td>Validée</td>
                             <td>19 Rue du Parc, Montpellier</td>
                             <td>100€</td>
-                            <td><button class="btn-commandes">Voir plus</button></td>
+                            <td><button class="btn-order">Voir plus</button></td>
                         </tr>                        
                     </tbody>
                 </table>
@@ -149,30 +148,5 @@
 
         </section>
     </main>
-    
-    <footer>
-        <nav>
-            <label for="Navigation">Navigation</label>
-            <ul>
-                <li><a href="index.html" id="a-top2">Accueil</a></li>
-                <li><a href="#histoire">Histoire</a></li>
-                <li><a href="#a-propos">À Propos</a></li>
-                <li><a href="vente.html">Vente</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <article>
-            <label for="">Thanks for stopping by !</label>
-            <a href="#contact.html">Let's keep in touch</a>
-        </article>
-        <div>
-            <label for="Coordonnées">Coordonnées</label>
-            <p>8 rue d'hozier<br>13002<br>Marseille</p>
-            <p id="lp">©  La Plateforme_<br>2025</p>
-        </div>
-    </footer>
 </body>
-
-
-
 </html>
