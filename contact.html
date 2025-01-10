@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Site de vente de thé" />
+    <meta name="keywords" content="Matcha, Thé, Tea, Matcha Tea" />
+    <meta name="author" content="Estéban, Antoine, Lamine" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matcha Tea</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="matcha.css" />
+    <link rel="stylesheet" href="mactha3.css" />
+
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="nav-bar">
+        <ul class="nav-left">
+          <li>
+            <a href="index.html"><h5>Matcha Tea</h5></a>
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <a href="compte.html"
+              ><img src="img/utilisateur.png" alt="Mon Compte"
+            /></a>
+          </li>
+          <li><a href="moncompte.html">Mon Compte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contenue">
+<!-- ******************Summary********************* -->
+        <aside class="section-gauche">
+          <ul>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">Vente</a></li>
+          </ul>
+        </aside>
+      </section>
+<!-- ******************Right Section******************* -->
+      <h3>Get In Touch</h3>
+      <section class="contact">
+        <div class="contact-info">
+          <div>
+            <p>
+              Envie de découvrir nos créations, collaborer ou simplement
+              discuter autour d’une tasse de matcha ? Laissez-nous un message !
+              Nous serions ravis de vous lire.
+            </p>
+          </div>
+        </div>
+<!-- *****************Contact******************** -->
+        <form class="contact-container">
+          <div class="field">
+            <label for="civility">Civilité*</label>
+            <select id="civility" name="civility">
+              <option value="monsieur">Mr</option>
+              <option value="madame">Mme</option>
+              <option value="mademoiselle">Non Spécifié</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">enter your name*</label>
+            <input class="input_1" type="text" placeholder="Name" />
+          </div>
+          <div class="field">
+            <label for="email">enter your email*</label>
+            <input class="input_2" type="email" placeholder="Email" />
+          </div>
+          <div>
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="5" required>
+Message</textarea
+            >
+          </div>
+          <input class="btn" type="submit" value="send message" />
+        </form>
+      </section>
+    </main>
+
+<!-- **********************Footer********************* -->
+    <footer>
+      <nav>
+          <label for="Navigation">Navigation</label>
+          <ul>
+              <li><a href="index.html" id="a-top2">Accueil</a></li>
+              <li><a href="#histoire">Histoire</a></li>
+              <li><a href="#a-propos">À Propos</a></li>
+              <li><a href="vente.html">Vente</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+      <article>
+          <label for="">Thanks for stopping by !</label>
+          <a href="#contact.html">Let's keep in touch</a>
+      </article>
+      <div>
+          <label for="Coordonnées">Coordonnées</label>
+          <p>8 rue d'hozier<br>13002<br>Marseille</p>
+          <p id="lp">© La Plateforme_<br>2025</p>
+      </div>
+  </footer>
+  </body>
+</html>
