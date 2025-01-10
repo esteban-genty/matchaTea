@@ -1,0 +1,282 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+h1{
+    font-family: "Lobster", sans-serif;
+    font-size: 4rem;
+    color: #4e792a;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.product{
+    padding: 40px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.227);
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    gap: 15px;
+}
+.product img{
+    width: 90%;
+    height: auto;
+}
+.product figure{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1f4100;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.product p{
+    color: #3c601f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: #4e792a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #3c601f;
+}
+
+/* account */
+.account{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.44);
+    margin-top: 230px;
+    border-radius: 20px;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+.account h1{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.btn-account{
+    width: 120%;
+}
+/* Etoile */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.rating i {
+    color: #d6d582;
+    margin: 0 2px;
+}
+
+/* Products Admin Page */
+.admin-product{
+    width: 80%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 10%;
+    gap: 55px;
+    margin-bottom: 100px;
+}
+.admin-product article{
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.227);
+    padding: 10px 50px 10px 10px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+.admin-product div{
+    display: flex;
+    gap: 10px;
+}
+.admin-product h2, h3, p{
+    font-family: var(--main-font);
+}
+.admin-product p{
+    font-family: var(--main-font);
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.admin-product img{
+    width: 13%;
+}
+.admin-product span{
+    color: rgb(192, 177, 42);
+}
+
+.btn-admin-product{
+    align-items: center;
+    width: 20%;
+    float: right;
+    background-color: #4e792a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 2%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.admin-order{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.admin-order table{
+    width: 90%;
+}
+.admin-order th{
+    font-size: 2rem;
+    text-align: left;
+    font-family: var(--main-font);
+    padding: 40px;
+    color: #3a1d06;
+    background-color: var(--third-color);
+    border: 1px solid rgba(128, 128, 128, 0.612);
+}
+.admin-order thead{
+    background-color: var(--secondary-color);
+}
+.admin-order td{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    border: 1px solid rgba(128, 128, 128, 0.612);
+}
+.admin-order table{
+    border: 2px solid #3a1d0688;
+}
+.admin-order a{
+    text-decoration: none;
+    color: #061e3a;
+}
+.btn-admin-order{
+    background-color: var(--secondary-color);
+    color: white;
+    color: #3a1d06;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-admin-order:hover{
+    background-color: #3a1d06;
+    color: white;
+}
+
+
+
+@media (max-width: 768px){
+    h1{
+        margin-top: 200px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+    .product img{
+        width: 80%;
+    }
+    /*Responsive account*/
+    .account{
+        width: 90%;
+    }
+    .account h1{
+        font-size: 2rem;
+    }
+    .admin-product{
+        margin-top: 200px;
+    }
+    .detail{
+        display: flex;
+        justify-content: center;
+    }
+    .admin-product article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    } 
+    .btn-admin-product{
+        width: 80%;
+    }
+    .admin-product img{
+        display: none;
+    }
+    .admin-product h2{
+        font-size: 1.2rem;
+    }
+
+
+    .admin-order table {
+        width: 100%;
+        border: none;
+    }
+
+    .admin-order th, .admin-order td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .admin-order thead {
+        display: none;
+    }
+
+    .admin-order tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 2px solid #3a1d06;
+    }
+    .btn-order {
+        width: 100%;
+        text-align: center;
+    }
+}

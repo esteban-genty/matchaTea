@@ -1,0 +1,80 @@
+/* Homepage CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Homepage content */
+    
+.section-right {
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+    .bg-img {
+        background: url("img/accueil/main-bg1.jpg") bottom/cover;
+        height: 100vh;
+        width: 105%;
+        float: right;
+        /* Benefits cards board */
+        .header-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 90px;
+            margin-bottom: 20px;
+            /* Benefit card */
+            .nav-link {
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: .3s ease;
+                background-color: rgba(255, 255, 255, 0.459);
+                border-radius: 25px;
+            }
+            .nav-link:hover {
+                transform: scale(1.1);
+                background-color: white;
+            }
+            .nav-link p {
+                text-align: center;
+                margin-top: 5px;
+            }
+            .img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 100px;
+              }
+          }
+    }
+}
+
+/* Homepage Content responsive to mobile & tablet*/
+@media (max-width: 900px) {
+    .section-right {
+        .bg-img {
+            width: 100%;
+            .header-links {
+                width: 85%;
+                float: right;
+                display: flex;
+                flex-wrap: wrap;
+                .nav-link {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .section-right {
+        .bg-img {
+            width: 100%;
+            .header-links {
+                margin-top: 140px;
+                width: 100%;
+            }
+        }
+    }
+}
